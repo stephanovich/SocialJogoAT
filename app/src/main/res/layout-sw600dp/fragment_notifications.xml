@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="344dp"
+        android:layout_height="454dp"
+        android:background="@color/primaryLightColor"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor"
+            android:backgroundTint="@color/primaryLightColor"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="125dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/descicao_foto_perfil"
+                android:elevation="1dp"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <TextView
+                android:id="@+id/telefoneText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/primaryLightColor" />
+
+            <TextView
+                android:id="@+id/steamText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@color/primaryLightColor"
+                android:elevation="1dp" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@color/primaryLightColor"
+                android:elevation="1dp" />
+
+            <TextView
+                android:id="@+id/idadeText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@color/primaryLightColor"
+                android:elevation="1dp" />
+
+            <TextView
+                android:id="@+id/nomeText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:background="@color/primaryLightColor"
+                android:elevation="1dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/editarBtnDados"
+                android:layout_width="54dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="9dp"
+                android:clickable="true"
+                android:contentDescription="@string/botao_editar"
+                android:focusable="true"
+                android:src="@drawable/ic_edit_black_24dp"
+                app:backgroundTint="@color/secondaryColor"
+                tools:ignore="PrivateResource" />
+
+        </LinearLayout>
+    </ScrollView>
+    >
+</androidx.constraintlayout.widget.ConstraintLayout>

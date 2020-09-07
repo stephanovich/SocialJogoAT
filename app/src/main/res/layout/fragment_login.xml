@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="350dp"
+            android:layout_height="626dp"
+            android:background="@color/primaryColor"
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="177dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/descicao_logo_app"
+            android:elevation="1dp"
+            android:src="@drawable/computer"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2" />
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:autofillHints="@string/e_mail"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.411" />
+
+        <EditText
+            android:id="@+id/senhaLogin"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/emailLogin"
+            android:autofillHints="@string/senha" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/primaryDarkColor"
+            android:contentDescription="@string/botao_entrar"
+            android:elevation="1dp"
+            android:text="@string/entrar_button"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
+
+        <Button
+            android:id="@+id/cadastroBtn"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/primaryDarkColor"
+            android:contentDescription="@string/botao_Cadastrar"
+            android:elevation="1dp"
+            android:text="@string/cadastrar_button"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+        <ImageView
+            android:id="@+id/twitterBtn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/desricao_twitter"
+            android:elevation="1dp"
+            android:src="@drawable/twitter_1"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:elevation="1dp"
+            android:text="@string/siga_twitter"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AssessmentApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Perfil</string>
+    <string name="title_notifications">Conta</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="steam_id">Apelido na steam</string>
+    <string name="e_mail">E-mail</string>
+    <string name="telefone">Telefone</string>
+    <string name="idade">Idade</string>
+    <string name="senha">Senha</string>
+    <string name="entrar_button">ENTRAR</string>
+    <string name="cadastrar_button">CADASTRAR</string>
+    <string name="enviar_button">ENVIAR</string>
+    <string name="cadastrar_view">Cadastrar</string>
+    <string name="status_disponivel">Disponivel</string>
+    <string name="editar_cadastro">Editar Cadastro</string>
+    <string name="descicao_foto_perfil">Foto de perfil do usuário</string>
+    <string name="descicao_logo_app">Logotipo da rede social Press Any Key</string>
+    <string name="status_show">O que você está jogando?</string>
+    <string name="texto_atividade">Atividades recentes</string>
+    <string name="desricao_twitter">Botão para seguir no twitter</string>
+    <string name="siga_twitter">Siga-nos no twitter</string>
+    <string name="botao_entrar">Botão para se conectar</string>
+    <string name="botao_Cadastrar">Botão para se cadastrar</string>
+    <string name="botao_salvar">Botão para salvar dados do cadastro</string>
+    <string name="botao_editar">Botão para editar dados do cadastro</string>
+    <string name="botao_salvar_edicao">Botão para salvar dados da conta</string>
+    <string name="botao_status">Botão para compartilhar o que estou jogando</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.EditarCadastroFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backGroundColor">
+
+        <View
+            android:id="@+id/viewEdit"
+            android:layout_width="341dp"
+            android:layout_height="560dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/primaryColor"
+            android:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:text="@string/editar_cadastro"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/nomeEdit"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toTopOf="@+id/viewEdit"
+            app:layout_constraintVertical_bias="0.39999998" />
+
+        <EditText
+            android:id="@+id/nomeEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/nome_completo"
+            android:elevation="1dp"
+            android:hint="@string/nome_completo"
+            android:inputType="textPersonName"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/viewEdit"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toTopOf="@+id/viewEdit"
+            app:layout_constraintVertical_bias="0.16000003" />
+
+        <EditText
+            android:id="@+id/steamEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:autofillHints="@string/steam_id"
+            android:elevation="1dp"
+            android:hint="@string/steam_id"
+            android:inputType="textPersonName"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toBottomOf="@+id/nomeEdit" />
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:autofillHints="@string/e_mail"
+            android:elevation="1dp"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toBottomOf="@+id/steamEdit" />
+
+        <EditText
+            android:id="@+id/senhaEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:autofillHints="@string/senha"
+            android:elevation="1dp"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
+
+        <EditText
+            android:id="@+id/telefoneEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:autofillHints="@string/telefone"
+            android:elevation="1dp"
+            android:ems="10"
+            android:hint="@string/telefone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toBottomOf="@+id/senhaEdit" />
+
+        <Button
+            android:id="@+id/enviarEditBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryDarkColor"
+            android:contentDescription="@string/botao_salvar_edicao"
+            android:elevation="1dp"
+            android:text="@string/enviar_button"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toBottomOf="@+id/viewEdit"
+            app:layout_constraintEnd_toEndOf="@+id/viewEdit"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/viewEdit"
+            app:layout_constraintTop_toBottomOf="@+id/telefoneEdit"
+            app:layout_constraintVertical_bias="0.586" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
